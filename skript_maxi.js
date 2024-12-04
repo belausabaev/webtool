@@ -173,7 +173,7 @@ let skript_9_1 = [ "Trage es ein in .../Hier", "[Zelle ist leer]", "Tabellenzell
 let skript_9_2 = [ "Trage es ein in .../Hier", "[Zelle ist leer]", "Tabellenzelle ist leer, Sorte [Reiterle] gesamt ist ...,  Eintrag in Tabellenzelle E3"];
 let skript_9_3 = [ "Trage es ein in .../Hier", "[Zelle ist leer]", "Tabellenzelle ist leer, Sorte [Elise Pflaume-Zimt] gesamt ist ...,  Eintrag in Tabellenzelle E4"];
 let skript_9_4 = [ "Trage es ein in .../Hier", "[Zelle ist leer]", "Tabellenzelle ist leer, Sorte [Südliche Elise] gesamt ist ...,  Eintrag in Tabellenzelle E5"];
-let skript_9_5 = [ "Trage es ein in .../Hier", "[Zelle ist leer]", "Tabellenzelle ist leer, Sorte [Caschew Schoko-Traum] gesamt ist ...,  Eintrag in Tabellenzelle E6"];
+let skript_9_5 = [ "Trage es ein in .../Hier", "[Zelle ist leer]", "Tabellenzelle ist leer, Sorte [Mandel Schoko-Traum] gesamt ist ...,  Eintrag in Tabellenzelle E6"];
 let skript_9_6 = [ "Trage es ein in .../Hier", "[Zelle ist leer]", "Tabellenzelle ist leer, Sorte [Bio-Christstollen] gesamt ist ...,  Eintrag in Tabellenzelle E7"];
 
 let skript_10_1 = [ "Trage es ein in .../Hier", "[Zelle ist leer]", "Tabellenzelle ist beschrieben mit, Sorte [Zwetschgenmännle] gesamt ist ...,  Möchtest du den Wert überschreiben?"];
