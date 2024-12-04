@@ -114,9 +114,9 @@ btnInhalt.addEventListener("click", function () {
 
 function updateField(a, b) {
 
-    
+
     console.log(a + " " + b + " " + prompt);
-    
+
     var z = "";
     var ee = "";
     if (b == 2) {
@@ -143,9 +143,9 @@ function updateField(a, b) {
         z = "zeile6";
         ee = "ein6";
     }
-    
-  //  console.log(z + " "+ee);
-    
+
+    //  console.log(z + " "+ee);
+
     const zeile = document.getElementById(z);
     const einZ1 = document.getElementById(ee);
 
@@ -153,18 +153,18 @@ function updateField(a, b) {
         prompt = "leer";
         tabelle_excel[a][b] = prompt;
 
-      //  einZ1.innerHTML = '<td id="'+ee+'" onclick="getSpeechFromAzure_modus('+a+","+b+')"></td>';
-      einZ1.innerHTML = '<td id="'+ee+'"></td>';
+        //  einZ1.innerHTML = '<td id="'+ee+'" onclick="getSpeechFromAzure_modus('+a+","+b+')"></td>';
+        einZ1.innerHTML = '<td id="' + ee + '"></td>';
     }
     else {
         tabelle_excel[a][b] = prompt;
-       // einZ1.innerHTML = '<td id="'+ee+'" onclick="getSpeechFromAzure_modus('+a+","+b+')">' + prompt + '</td>';
-       einZ1.innerHTML = '<td id="'+ee+'">' + prompt + '</td>';
+        // einZ1.innerHTML = '<td id="'+ee+'" onclick="getSpeechFromAzure_modus('+a+","+b+')">' + prompt + '</td>';
+        einZ1.innerHTML = '<td id="' + ee + '">' + prompt + '</td>';
     }
 
 
     einZ1.classList.add("list-item");
-   // einZ1.setAttribute("onclick", 'getSpeechFromAzure_modus('+a+","+b+')');
+    // einZ1.setAttribute("onclick", 'getSpeechFromAzure_modus('+a+","+b+')');
     zeile.appendChild(einZ1);
 }
 /*
@@ -201,10 +201,10 @@ function getPrompt(a, b) {
         z = "zeile6";
         ee = "ein6";
     }
-    console.log(z +" "+ee);
+    console.log(z + " " + ee);
     const zeile = document.getElementById(z);
     const einZ1 = document.getElementById(ee);
-  
+
     //  let txt = document.getElementById("ein1").innerText;
     //  einZ1.innerHTML =  '<textarea style="display: inline-block;width:100px;height:50px" maxlength="50"></textarea>'
 
@@ -212,16 +212,16 @@ function getPrompt(a, b) {
     einZ1.innerHTML = '<input type="text" name="formel">';
     zeile.appendChild(einZ1);
 
-   
+
 
     //const zelleEinnahmen = document.getElementById("einnahmengebaeck");
     // add classes
     // zelleEinnahmen.classList.add("list-item");
     // zelleEinnahmen.className.add("textarea");
     // add attributes
- //   einZ1.classList.add("input");
+    //   einZ1.classList.add("input");
 
- //   einZ1.setAttribute("id", ee);
+    //   einZ1.setAttribute("id", ee);
     /*
     einZ1.setAttribute("onclick", "getSpeechFromAzure_modus("+a+","+b+")");
     einZ1.setAttribute("ondblclick", "getPrompt("+a+","+b+")");
@@ -233,12 +233,12 @@ function getPrompt(a, b) {
     const nodeEingabe = document.getElementById(ee);
     */
     einZ1.addEventListener("keyup", (event) => {
-        if(event.key === "Enter"){
+        if (event.key === "Enter") {
             console.log(event.key);
-            updateField(a,b);
+            updateField(a, b);
         }
     });
-    
+
 
     einZ1.addEventListener('input', (event) => {
         console.log(event.target.value);
@@ -262,7 +262,7 @@ function getPrompt(a, b) {
             //getSpeechFromAzure(phrase);
         });
         */
-   
+
 
     // 
 
@@ -369,7 +369,7 @@ function updateSrc() {
     resourceRegion = document.getElementById('resourceRegion').value.trim();
     phrase = document.getElementById('phraseDiv').value.trim();
 
-  //  console.log("in update src ++ phrase " + phrase);
+    //  console.log("in update src ++ phrase " + phrase);
     /*
     // server control - by file
     var serverAudioFileControl = document.getElementById('serverAudioFile');
@@ -502,27 +502,30 @@ function getSpeechFromAzure(phrase) {
 
 // Client-side request directly to Azure Cognitive Services
 function getSpeechFromAzure_modus(x, y) {
-   // console.log("inhalt "+inhalt +" koord "+koord+" info "+info+" sz "+sz);
+    // console.log("inhalt "+inhalt +" koord "+koord+" info "+info+" sz "+sz);
     if (x != undefined && y != undefined) {
 
-        if(ergebnis && ( x ==5)){
-            if(y==2){
-                getSpeechFromAzure('"'+berechnung[0]+'"');
-            }else if(y==3){
-                getSpeechFromAzure('"'+berechnung[1]+'"');
-            }else if(y==4){
-                getSpeechFromAzure('"'+berechnung[2]+'"');
-            }else if(y==5){
-                getSpeechFromAzure('"'+berechnung[3]+'"');
-            }else if(y==6){
-                getSpeechFromAzure('"'+berechnung[4]+'"');
+        if (ergebnis && (x == 5)) {
+            if (y == 2) {
+                getSpeechFromAzure('"' + berechnung[0] + '"');
+            } else if (y == 3) {
+                getSpeechFromAzure('"' + berechnung[1] + '"');
+            } else if (y == 4) {
+                getSpeechFromAzure('"' + berechnung[2] + '"');
+            } else if (y == 5) {
+                getSpeechFromAzure('"' + berechnung[3] + '"');
+            } else if (y == 6) {
+                getSpeechFromAzure('"' + berechnung[4] + '"');
             }
-           
+
         }
 
         if (inhalt) {
-          //  console.log("x: " + x + " y: " + y + " " + tabelle_excel[x][y]);
+            //  console.log("x: " + x + " y: " + y + " " + tabelle_excel[x][y]);
+
             getSpeechFromAzure(tabelle_excel[x][y]);
+
+
         }
         else if (koord) {
             if (x == 0) {
@@ -554,7 +557,7 @@ function getSpeechFromAzure_modus(x, y) {
             else if (y == 1) {
                 getSpeechFromAzure("Überschrift Spalte " + tabelle_excel[x][1]);
             }
-            else if(y == 0) {
+            else if (y == 0) {
                 getSpeechFromAzure("Tabellenspalte " + tabelle_excel[x][0]);
             }
             else {
@@ -566,6 +569,63 @@ function getSpeechFromAzure_modus(x, y) {
 }
 
 
+
+
+
+// Client-side request directly to Azure Cognitive Services
+function getSpeechFromAzure_empty(x, y) {
+    // console.log("inhalt "+inhalt +" koord "+koord+" info "+info+" sz "+sz);
+    if (x != undefined && y != undefined) {
+
+
+        if (inhalt) {
+            //  console.log("x: " + x + " y: " + y + " " + tabelle_excel[x][y]);
+
+            if (x == 0 || y == 0) {
+                getSpeechFromAzure(tabelle_excel[x][y]);
+            }
+            else {
+                getSpeechFromAzure('leer');
+            }
+
+
+
+        }
+        else if (koord) {
+            if (x == 0) {
+                getSpeechFromAzure("Tabellenzeile " + y);
+            }
+            else if (y == 0) {
+                getSpeechFromAzure("Tabellenspalte " + tabelle_excel[x][0]);
+            }
+
+          //  if (x == 0 || y == 0) {
+          //      getSpeechFromAzure(tabelle_excel[x][y] + " Tabellenzelle " + tabelle_excel[x][0] + " " + tabelle_excel[0][y]);
+          //  }
+            else {
+                getSpeechFromAzure('leer' + " Tabellenzelle " + tabelle_excel[x][0] + " " + tabelle_excel[0][y]);
+            }
+
+        }
+        else if (info) {
+            getSpeechFromAzure("Tabellenzelle " + tabelle_excel[x][0] + " " + tabelle_excel[0][y]);
+
+        }
+
+        else if (sz) {
+            if (x == 0) {
+                getSpeechFromAzure("Tabellenzeile " + y);
+            }
+            else if (y == 0) {
+                getSpeechFromAzure("Tabellenspalte " + tabelle_excel[x][0]);
+            }
+
+           
+ 
+        }
+
+    }
+}
 
 
 

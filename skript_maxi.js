@@ -130,7 +130,7 @@ let tabelle_excel = [
         "C", "Menge", "120", "98", "130", "100", "103", "55"
     ],
     [
-        "D", "Einzelpreis(EUR)", "5 Euro", "3 Euro", "9 Euro 50", "9 Euro 50", "9 Euro 50", "10 Euro"
+        "D", "Einzelpreis", "5 Euro", "3 Euro", "9 Euro 50", "9 Euro 50", "9 Euro 50", "10 Euro"
     ],
     [
         "E", "Einnahmen", "leer", "leer", "leer", "leer", "leer", "leer"

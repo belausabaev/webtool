@@ -59,8 +59,7 @@
     <button id="inhalt" onclick="setMode(1)">Zelleninhalt</button>
     <button id="koordinaten" onclick="setMode(2)">Zelleninhalt und koordinaten</button>
     <button id="info" onclick="setMode(4)">Zellenkoordinaten</button>
-    <button id="sz" onclick="setMode(3)">Zelleninhalt mit Spalte und Zeile Vorlesen</button>
-    <button id="sz" onclick="setMode(5)">Ergebnis</button>
+
 </p>
 
 
@@ -69,27 +68,27 @@
     <tr id="heading">
         <th>
             <div></div>
-        <th scope="col" onclick="getSpeechFromAzure_modus(1,0)" id="A">
+        <th scope="col" onclick="getSpeechFromAzure_empty(1,0)" id="A">
             <div>A</div>
-        <th scope="col" onclick="getSpeechFromAzure_modus(2,0)">
+        <th scope="col" onclick="getSpeechFromAzure_empty(2,0)">
             <div>B</div>
-        <th scope="col" onclick="getSpeechFromAzure_modus(3,0)">
+        <th scope="col" onclick="getSpeechFromAzure_empty(3,0)">
             <div>C</div>
         </th>
-        <th scope="col" onclick="getSpeechFromAzure_modus(4,0)">
+        <th scope="col" onclick="getSpeechFromAzure_empty(4,0)">
             <div>D</div>
         </th>
-        <th scope="col" onclick="getSpeechFromAzure_modus(5,0)">
+        <th scope="col" onclick="getSpeechFromAzure_empty(5,0)">
             <div>E</div>
         </th>
     <tr scope="row" id="heading">
-        <th onclick="getSpeechFromAzure_modus(0,1)">
+        <th onclick="getSpeechFromAzure_empty(0,1)">
             <div>1</div>
-        <td scope="col" onclick="getSpeechFromAzure_modus(1,1)"></td>
-        <td scope="col" onclick="getSpeechFromAzure_modus(2,1)"></td>
-        <td scope="col" onclick="getSpeechFromAzure_modus(3,1)"></td>
-        <td scope="col" onclick="getSpeechFromAzure_modus(4,1)"></td>
-        <td scope="col" onclick="getSpeechFromAzure_modus(5,1)"></td>
+        <td scope="col" onclick="getSpeechFromAzure_empty(1,1)">leer</td>
+        <td scope="col" onclick="getSpeechFromAzure_empty(2,1)">leer</td>
+        <td scope="col" onclick="getSpeechFromAzure_empty(3,1)">leer</td>
+        <td scope="col" onclick="getSpeechFromAzure_empty(4,1)">leer</td>
+        <td scope="col" onclick="getSpeechFromAzure_empty(5,1)">leer</td>
         <!--
         <th>
             <div>Position</div>
@@ -106,64 +105,64 @@
         </th>
         -->
     <tr>
-        <th scope="row" onclick="getSpeechFromAzure_modus(0,2)">
+        <th scope="row" onclick="getSpeechFromAzure_empty(0,2)">
             <div>2</div>
         </th>
-        <td onclick="getSpeechFromAzure_modus(1,2)"></td>
-        <td scope="row" id="geb" onclick="getSpeechFromAzure_modus(2,2)"></td>
-        <td onclick="getSpeechFromAzure_modus(3,2)"></td>
-        <td onclick="getSpeechFromAzure_modus(4,2)"></td>
-        <td onclick="getSpeechFromAzure_modus(5,2)"></td>
+        <td onclick="getSpeechFromAzure_empty(1,2)">leer</td>
+        <td scope="row" id="geb" onclick="getSpeechFromAzure_empty(2,2)">leer</td>
+        <td onclick="getSpeechFromAzure_empty(3,2)">leer</td>
+        <td onclick="getSpeechFromAzure_empty(4,2)">leer</td>
+        <td onclick="getSpeechFromAzure_empty(5,2)">leer</td>
     </tr>
     <tr>
-        <th scope="row" onclick="getSpeechFromAzure_modus(0,3)">
+        <th scope="row" onclick="getSpeechFromAzure_empty(0,3)">
             <div>3</div>
         </th>
-        <td id="pos" onclick="getSpeechFromAzure_modus(1,3)"></td>
-        <td scope="row" id="geb" onclick="getSpeechFromAzure_modus(2,3)"></td>
-        <td id="meng" onclick="getSpeechFromAzure_modus(3,3)"></td>
-        <td id="pr" onclick="getSpeechFromAzure_modus(4,3)"></td>
-        <td onclick="getSpeechFromAzure_modus(5,3)"></td>
+        <td id="pos" onclick="getSpeechFromAzure_empty(1,3)">leer</td>
+        <td scope="row" id="geb" onclick="getSpeechFromAzure_empty(2,3)">leer</td>
+        <td id="meng" onclick="getSpeechFromAzure_empty(3,3)">leer</td>
+        <td id="pr" onclick="getSpeechFromAzure_empty(4,3)">leer</td>
+        <td onclick="getSpeechFromAzure_empty(5,3)">leer</td>
     </tr>
     <tr>
-        <th scope="row" onclick="getSpeechFromAzure_modus(0,4)">
+        <th scope="row" onclick="getSpeechFromAzure_empty(0,4)">
             <div>4</div>
         </th>
-        <td id="pos" onclick="getSpeechFromAzure_modus(1,4)"></td>
-        <td id="geb" onclick="getSpeechFromAzure_modus(2,4)"></td>
-        <td id="meng" onclick="getSpeechFromAzure_modus(3,4)"></td>
-        <td id="pr" onclick="getSpeechFromAzure_modus(4,4)"></td>
-        <td onclick="getSpeechFromAzure_modus(5,4)"></td>
+        <td id="pos" onclick="getSpeechFromAzure_empty(1,4)">leer</td>
+        <td id="geb" onclick="getSpeechFromAzure_empty(2,4)">leer</td>
+        <td id="meng" onclick="getSpeechFromAzure_empty(3,4)">leer</td>
+        <td id="pr" onclick="getSpeechFromAzure_empty(4,4)">leer</td>
+        <td onclick="getSpeechFromAzure_empty(5,4)">leer</td>
     </tr>
     <tr>
-        <th scope="row" onclick="getSpeechFromAzure_modus(0,5)">
+        <th scope="row" onclick="getSpeechFromAzure_empty(0,5)">
             <div>5</div>
         </th>
-        <td onclick="getSpeechFromAzure_modus(1,5)"></td>
-        <td onclick="getSpeechFromAzure_modus(2,5)"></td>
-        <td onclick="getSpeechFromAzure_modus(3,5)"></td>
-        <td onclick="getSpeechFromAzure_modus(4,5)"></td>
-        <td onclick="getSpeechFromAzure_modus(5,5)"></td>
+        <td onclick="getSpeechFromAzure_empty(1,5)">leer</td>
+        <td onclick="getSpeechFromAzure_empty(2,5)">leer</td>
+        <td onclick="getSpeechFromAzure_empty(3,5)">leer</td>
+        <td onclick="getSpeechFromAzure_empty(4,5)">leer</td>
+        <td onclick="getSpeechFromAzure_empty(5,5)">leer</td>
     </tr>
     <tr>
-        <th scope="row" onclick="getSpeechFromAzure_modus(0,6)">
+        <th scope="row" onclick="getSpeechFromAzure_empty(0,6)">
             <div>6</div>
         </th>
-        <td onclick="getSpeechFromAzure_modus(1,6)"></td>
-        <td onclick="getSpeechFromAzure_modus(2,6)"></td>
-        <td onclick="getSpeechFromAzure_modus(3,6)"></td>
-        <td onclick="getSpeechFromAzure_modus(4,6)"></td>
-        <td onclick="getSpeechFromAzure_modus(5,6)"></td>
+        <td onclick="getSpeechFromAzure_empty(1,6)">leer</td>
+        <td onclick="getSpeechFromAzure_empty(2,6)">leer</td>
+        <td onclick="getSpeechFromAzure_empty(3,6)">leer</td>
+        <td onclick="getSpeechFromAzure_empty(4,6)">leer</td>
+        <td onclick="getSpeechFromAzure_empty(5,6)">leer</td>
     </tr>
     <tr>
-        <th scope="row" onclick="getSpeechFromAzure_modus(0,7)">
+        <th scope="row" onclick="getSpeechFromAzure_empty(0,7)">
             <div>7</div>
         </th>
-        <td onclick="getSpeechFromAzure_modus(1,7)"></td>
-        <td onclick="getSpeechFromAzure_modus(2,7)"></td>
-        <td onclick="getSpeechFromAzure_modus(3,7)"></td>
-        <td onclick="getSpeechFromAzure_modus(4,7)"></td>
-        <td onclick="getSpeechFromAzure_modus(5,7)"></td>
+        <td onclick="getSpeechFromAzure_empty(1,7)">leer</td>
+        <td onclick="getSpeechFromAzure_empty(2,7)">leer</td>
+        <td onclick="getSpeechFromAzure_empty(3,7)">leer</td>
+        <td onclick="getSpeechFromAzure_empty(4,7)">leer</td>
+        <td onclick="getSpeechFromAzure_empty(5,7)">leer</td>
     </tr>
 
 </table>
