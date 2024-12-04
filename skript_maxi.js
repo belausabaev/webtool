@@ -137,7 +137,7 @@ let tabelle_excel = [
     ]
 ]
 
-let berechnung = [600,294,1235,950,978.50,550];
+let berechnung = ["600 Euro","294 Euro","1235 Euro","950 Euro","978.50 Euro","550 Euro"];
 
 let berechnung2 = { 
     "Zwetschgenmännle" : 600, 
